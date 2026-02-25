@@ -1,0 +1,9 @@
+<h2>Messages Received</h2>
+
+{% for msg in messages %}
+<p>
+<strong>From:</strong> {{ msg[2] }} <br>
+{{ msg[3] }}
+</p>
+<hr>
+{% endfor %}

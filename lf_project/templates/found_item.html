@@ -1,0 +1,23 @@
+<h2>Item Found</h2>
+
+{% if item %}
+<p><strong>Item Name:</strong> {{ item[0] }}</p>
+<p><strong>Description:</strong> {{ item[1] }}</p>
+<p><strong>Owner Name:</strong> {{ item[2] }}</p>
+{% endif %}
+
+<hr>
+
+<h3>Send Message to Owner</h3>
+
+<form method="POST">
+Your Name: <input name="sender_name" required><br><br>
+
+Your Contact Details (Email/Phone/etc): 
+<input name="contact" required><br><br>
+
+Message:
+<textarea name="message" required></textarea><br><br>
+
+<button type="submit">Send Message</button>
+</form>

@@ -1,0 +1,11 @@
+<h2>Messages From Finders</h2>
+
+{% for msg in messages %}
+<p>
+<b>Item:</b> {{ msg[0] }} <br>
+<b>Finder Name:</b> {{ msg[1] }} <br>
+<b>Contact:</b> {{ msg[2] }} <br>
+<b>Message:</b> {{ msg[3] }}
+</p>
+<hr>
+{% endfor %}

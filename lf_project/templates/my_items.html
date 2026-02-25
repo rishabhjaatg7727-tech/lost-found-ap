@@ -1,0 +1,12 @@
+<h2>My Items</h2>
+
+{% for item in items %}
+<p>
+<b>Item:</b> {{ item[2] }} <br>
+<b>Description:</b> {{ item[3] }} <br>
+
+<img src="{{ url_for('static', filename='qr_' + item[0]|string + '.png') }}" width="150"><br><br>
+
+</p>
+<hr>
+{% endfor %}
